@@ -28,8 +28,10 @@ submit.addEventListener("click", (event) => {
   arrayLoginLength = arrayLogin.length;
   arrayPwd = password.value.split('');
   arrayPwdLength = arrayPwd.length;
-  if(arrayLoginLength >= 15 || arrayPwdLength >= 9){
-   error.innerHTML  = 'Login ou mot de passe trop long';
+  if(arrayLoginLength >= 15 || arrayPwdLength <= 9){
+   error.innerHTML  = 'Login trop long ou mot de passe trop court';
+  }else{
+    error.innerHTML = 'ok';
   };
 });
 
