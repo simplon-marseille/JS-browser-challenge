@@ -1,0 +1,12 @@
+form input{
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  transition: 1s;
+  width: 10%;
+}
+
+.form-xl{
+  transition: 1s;
+  width: 15%;
+}
