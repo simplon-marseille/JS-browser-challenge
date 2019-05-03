@@ -6,4 +6,17 @@ round-photo.html
 type-effect.html
 valid-form.html
 
+.src/banniere.js
+.src/dynamicForm.js
+.src/menu.js
+.src/imageOrder.js
+.src/roundPhoto.js
+/src/validForm.js
+/src/typeEffect.js
+
+/assets/stylesheet/css/banniere.css
+/assets/stylesheet/css/dynamic-form.css
+/assets/stylesheet/css/menu.css
+/assets/stylesheet/css/round-photo.css
+/assets/stylesheet/css/valid-form.css
 
