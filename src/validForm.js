@@ -4,11 +4,23 @@ const submit = document.querySelector('#button');
 const error = document.querySelector('#error-message');
 const checkbox = document.querySelector("input[name=checkbox]");
 const arrayOfLetter = [];
-
+const regex = /[a-z]/g;
 
 password.addEventListener("keydown", (event) => {
-   response = password.value.split('');
+  response = password.value.split('');
+  // if(password.value.match(regex)){
+
+  // };
+  const key = event.keyCode || event.charCode;
+  if(key == 8 || key == 46){
+    arrayOfLetter.splice(arrayOfLetter.length-1, 1);
+  }else{
    arrayOfLetter.push(response[response.length-1]);
+  };
+   //error.innerHTML = password.value;
+   //error.innerHTML = arrayOfLetter.length;
+
+   error.innerHTML = arrayOfLetter;
    if(arrayOfLetter.length <= 9){
     password.classList.remove('default-password');
     password.classList.add('bad-password');
@@ -17,7 +29,6 @@ password.addEventListener("keydown", (event) => {
     password.classList.add('good-password');
    };
 });
-
 
 
 

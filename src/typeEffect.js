@@ -1,15 +1,17 @@
 const mainTitle = document.querySelector('#main-title');
-const message = "avengers";
-
+const message = "Avengers";
 let i = 0;
 const nbChar = message.length;
+const cursor = '|'
+
 const afficheMessageLettreParLettre = (message) => {
   const newArraySplit = message.split('');
   if(i < nbChar){
-    //console.log(newArraySplit[i++]);
     mainTitle.innerHTML += newArraySplit[i++];
   }else{
-    clearInterval(refreshLetter);
+    //clearInterval(refreshLetter);
+    mainTitle.innerHTML = '';
+    i = 0;
   };
 };
 
