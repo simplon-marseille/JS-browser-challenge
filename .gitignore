@@ -5,14 +5,16 @@ menu-scroll-down.html
 round-photo.html
 type-effect.html
 valid-form.html
+shopping-list.html
 
 /src/banniere.js
 /src/dynamicForm.js
 /src/menu.js
 /src/imageOrder.js
-/src/roundPhoto.js
+/src/round-photo.js
 /src/validForm.js
 /src/typeEffect.js
+/src/shopping-list.js
 
 /assets/stylesheet/css/banniere.css
 /assets/stylesheet/css/dynamic-form.css
