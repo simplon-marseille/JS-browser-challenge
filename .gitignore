@@ -6,6 +6,8 @@ round-photo.html
 type-effect.html
 valid-form.html
 shopping-list.html
+star.html
+slider.html
 
 /src/banniere.js
 /src/dynamicForm.js
@@ -15,6 +17,8 @@ shopping-list.html
 /src/validForm.js
 /src/typeEffect.js
 /src/shopping-list.js
+/src/star.js
+/src/slider.js
 
 /assets/stylesheet/css/banniere.css
 /assets/stylesheet/css/dynamic-form.css
