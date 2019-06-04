@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge Javascript navigateur</title>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif;">
+    <h1 style="margin-top: 150px; text-align: center; color: gray;">Premiers challenges en JS !</h1>
+    <div class="énnoncé" style="text-align: center;">
+      <p>Le click sur le bouton paramoteur doit permettre de n'afficher que les paramoteurs.<br>Idem pour multiaxe. <br>Le bouton all doit permettre de tout afficher</p>
+    </div>
+      <div id="imageBloc" style="text-align: center;">
+        <button id="all"> All</button>
+        <button id="paramoteur">paramoteur</button>
+        <button id="multiaxe">multiaxe</button>
+          <ul class="paramoteur">
+            <li style="display: inline-block;"><img src="./assets/images/paramoteur1.jpg" width="300px" alt="" id="ma-super-image1"></li>
+            <li style="display: inline-block;"><img src="./assets/images/paramoteur2.jpg" width="300px" alt="" id="ma-super-image2"></li>
+            <li style="display: inline-block;"><img src="./assets/images/paramoteur3.jpg" width="300px" alt="" id="ma-super-image3"></li>
+          </ul>
+          <ul class="multiaxe">
+            <li style="display: inline-block;"><img src="./assets/images/multiaxe1.jpg" width="300px" alt="" id="ma-super-image1"></li>
+            <li style="display: inline-block;"><img src="./assets/images/multiaxe2.jpg" width="300px" alt="" id="ma-super-image2"></li>
+            <li style="display: inline-block;"><img src="./assets/images/multiaxe3.jpg" width="300px" alt="" id="ma-super-image3"></li>
+          </ul>
+      </div>
+      <script src="./src/imageOrder.js"></script>
+  </body>
+</html>
+
