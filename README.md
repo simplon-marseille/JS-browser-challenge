@@ -5,7 +5,7 @@
 3. 'Dégiter' le dossier cloner ('rm -rf .git')
 4. Versionner votre projet (git init, git add, git commit, créer un repo sur github, git remote add, git push origin master)
 5. Dans le terminal/prompt, installer local-web-server et lancer le serveur (command ws) à la racine de votre projet
-6. allez sur http://localhost:8000
+6. Allez sur http://localhost:8000
 
 
 
