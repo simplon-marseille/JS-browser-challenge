@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+}
+
+#menu{
+  background-color: rgba(255,255,255, 1);
+  padding: 10px;
+  margin-top: 0;
+}
+
+#menu li{
+  color: gray;
+  padding: 20px;
+}
+
+.banner{
+  height: 100vh;
+}
+
+.fixed-position{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 3px 3px 3px #6d6c6c;
+}
