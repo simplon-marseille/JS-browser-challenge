@@ -12,8 +12,6 @@
 /src/banniere.js
 /src/dynamicForm.js
 /src/menu.js
-/src/imageOrder.js
-/src/round-photo.js
 /src/validForm.js
 /src/typeEffect.js
 /src/shopping-list.js
@@ -22,4 +20,3 @@
 /src/addSideBar.js
 
 /assets/stylesheet/css/banniere.css
-/assets/stylesheet/css/round-photo.css

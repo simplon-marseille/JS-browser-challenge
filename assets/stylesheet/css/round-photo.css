@@ -1,0 +1,9 @@
+.round-photo {
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.shadow{
+  box-shadow: 3px 3px 3px gray;
+  transition: .3s;
+}
