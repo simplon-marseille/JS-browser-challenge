@@ -1,5 +1,14 @@
 body{
   margin: 0;
+  background-color: gray; 
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  margin-top: 350px; 
+  text-align: center; 
+  color: white; 
+  font-family: 'Roboto', sans-serif;
 }
 
 #menu{
@@ -15,6 +24,10 @@ body{
 
 .banner{
   height: 100vh;
+}
+
+ul li{
+  display: inline-block;
 }
 
 .fixed-position{
