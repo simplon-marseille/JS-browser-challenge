@@ -20,7 +20,41 @@
     <p class="watchPwd"><input type="checkbox" id="checkbox" name="checkbox">Voir le mot de passe.</p>
     <div id="error-message"></div>
     <script>
-      //TODO
+    //On récupère les éléments HTML concernés dans des constantes
+      const bouton = document.querySelector('#button');
+      const userLogin = document.querySelector('#login');
+      const password = document.querySelector('#pwd');
+      
+      //On place un micro sur l'élément bouton
+      bouton.addEventListener('click', (event) => {
+        //On empeche le comportement par défaut du bouton
+        event.preventDefault();
+        //On vient établir la vérité des deux expressions dans le 'if': login > 15 char et pwd < 8 char
+        if(userLogin.value.length >= 15 || password.value.length < 8){
+          console.log('Mauvais login ou mot de passe.');
+        }else{
+          console.log('success');
+        }
+      });
+
+
+      //On va venir vérifier la longueur du password à chaque pression de touche (input/keyup/keydown)
+      password.addEventListener('input', (event) => {
+        //On vient vérifier que l'on récupère bien chaque caractère à chaque pression de touche.
+        console.log(password.value);
+        //Si la longueur du password est < 8 alors...
+        if(password.value.length < 8){
+          //on ajoute la class 'bad-password', puis on retire la class 'good-password'
+          password.classList.add('bad-password');
+          password.classList.remove('good-password');
+        }else{
+          //Sinon, on ajoute la class 'good-password', puis on retire la class 'bad-password'
+          password.classList.add('good-password');
+          password.classList.remove('bad-password');
+        }
+      });
+
+
     </script>
   </body>
 </html>

@@ -18,3 +18,24 @@ all.addEventListener("click", (even) => {
  paramoteur.style.display = 'block';
  multiaxe.style.display ='block';
 });
+
+
+
+
+
+const stars = document.querySelectorAll('#list-of-stars li');
+stars.forEach((star) => {
+    star.classList.add('star-unchecked');
+})
+for (let index = 0; index < stars.length; index++) {
+    stars[index].addEventListener('click', (event) => {
+        for (let i = 0; i <= index; i++) {
+            stars[i].classList.remove('star-unchecked');
+            stars[i].classList.add('star-checked');
+        }
+        for (let a = index + 1; a <= stars.length; a++) {
+            stars[a].classList.remove('star-checked');
+            stars[a].classList.add('star-unchecked');
+        }
+    });
+}

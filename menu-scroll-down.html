@@ -18,7 +18,15 @@
     </h1>
   </div>
     <script>
-      //TODO
+    const navbar = document.querySelector('#menu');
+      window.addEventListener('scroll', (event) => {  
+        let scrollLimit = event.currentTarget.scrollY;
+        if(scrollLimit >= 70){
+          navbar.classList.add('fixed-position');
+        }else{
+          navbar.classList.remove('fixed-position');
+        }
+      });
     </script>
   </body>
 </html>

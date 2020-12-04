@@ -11,9 +11,14 @@
         <br> (voir round-photo.html)
       </p>
     </div>
-      <div id="photo1"><img src="./assets/images/round-photo/photo1.jpg" width="20%"></div>
+      <div id="photo1">
+        <img src="./assets/images/round-photo/photo1.jpg" width="20%">
+      </div>
     <script>
-        //TODO
+        const image = document.querySelector('img');
+        image.addEventListener('click', (event) => {
+            event.currentTarget.classList.toggle('round-photo');
+        }); 
     </script>
   </body>
 </html>

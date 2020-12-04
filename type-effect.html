@@ -8,9 +8,22 @@
     <h2>Faire apparaitre le mots de votre choix lettre par lettre dans la balise 'h1' (voir code...)
     <br>(voir type-effect.html)
     </h2>
-    <h1></h1>
+    <h1>avengers</h1>
   <script>
-    //TODO
+    const word = 'avengers';
+    const title = document.querySelector('h1');
+    console.log(word[0]);
+    let index = 0;
+    const nextLetter = () => {
+      title.insertAdjacentHTML('beforeend', `${word[index]}`);
+      setTimeout(nextLetter, 400);
+      index++;
+      if(index > word.length){
+        index = 0;
+        title.innerText = '';
+      }
+    };
+    nextLetter();
   </script>
   </body>
 </html>

@@ -13,14 +13,27 @@
         <br>(voir shopping-list.html)
       </p>
     </div>
-    <form action="" id="formulaire" style="text-align: center;">
-      <input type="text" placeholder="ex: poire">
-    <button id="bouton">Envoyer</button>
-    <button id="Supprime">Supprimer ma liste</button>
-    </form>
-    <div id="maListeDeCourse">Liste : </div>
+      <form action="" id="formulaire" style="text-align: center;">
+        <input type="text" placeholder="ex: poire" id="userInput">
+        <button id="bouton">Envoyer</button>
+        <button id="Supprime">Supprimer ma liste</button>
+      </form>
+    <div id="maListeDeCourse"></div>
     <script>
-      //TODO
+      const bouton = document.querySelector('#bouton');
+      const deleteList = document.querySelector('#Supprime');
+      const userInput = document.querySelector('#userInput');
+      const list = document.querySelector('#maListeDeCourse');
+      bouton.addEventListener('click', (event) => {
+        event.preventDefault();
+        list.insertAdjacentHTML('beforeend', `<p>${userInput.value}</p>`);
+        userInput.value = '';
+      });
+
+      deleteList.addEventListener('click', (event) => {
+        event.preventDefault();
+        list.innerHTML = '';
+      });
     </script>
   </body>
 </html>
